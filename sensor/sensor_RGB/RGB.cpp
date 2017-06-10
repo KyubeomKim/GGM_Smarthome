@@ -12,8 +12,7 @@ void sensorInit(int _sensorPinNum){
 int red = 0, green = 0, blue = 0;
 int temp = 0;
 
-int readTemp() {
-  temp = analogRead(11) / 9.31;
+void readTemp(int temp) {
   if(temp <= 25) {
     analogWrite(3, 0);
     analogWrite(5, 0);
@@ -31,5 +30,4 @@ int readTemp() {
     delay(1000 % (temp % 33));
 
   }
-  return temp;
 }

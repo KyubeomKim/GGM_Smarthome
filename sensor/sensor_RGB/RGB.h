@@ -1,3 +1,3 @@
 void sensorInit(int _sensorPinNum);
-int readTemp();
+int readTemp(temp);
 
