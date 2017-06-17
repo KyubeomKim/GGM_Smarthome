@@ -8,7 +8,9 @@ int lm35Pin = A0;
 float getTemp()
 {
 	reading = analogRead(lm35Pin);
-	temperature = reading / 9.31;
+	temperature = reading/9.31;
+  Serial.println(reading);
+  Serial.println(temperature);
 
  return temperature;
 }

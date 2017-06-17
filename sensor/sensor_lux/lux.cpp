@@ -3,9 +3,9 @@
 
 int sensorPinNum;
 
-void sensorInit(int _sensorPinNum){
+void initLux(int _sensorPinNum){
   sensorPinNum=_sensorPinNum;
-  pinMode(sensorPinNum, OUTPUT);
+  pinMode(sensorPinNum, INPUT);
 }
 
 int getLux(int _bias=0){

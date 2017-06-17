@@ -4,7 +4,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   
-  sensorInit(0);
+  initLux(0);
   pinMode(3,OUTPUT);
 }
 
