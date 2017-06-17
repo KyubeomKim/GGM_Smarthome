@@ -28,6 +28,7 @@ void readTemp(int temp) {
     delay(1000 % (temp % 33));
     analogWrite(3, 0);
     delay(1000 % (temp % 33));
-
   }
+
+  
 }
