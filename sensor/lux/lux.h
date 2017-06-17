@@ -1,4 +1,4 @@
-void sensorInit(int _sensorPinNum);
+void initLux(int _sensorPinNum);
 int getLux(int _bias=0);
 int getLuxScaleDown(int _bias=0);
 int getLuxReverse(int _bias=0);

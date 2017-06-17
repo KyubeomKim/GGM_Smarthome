@@ -10,7 +10,7 @@ int previous = LOW; // 이전 기울기 상태 저장 변수
 int reading; // 현재 기울기 상태 저장 변수
 int result = HIGH; // 리턴 값 최초정의
 
-void tiltInit(int _sensorPinNum){
+void initTilt(int _sensorPinNum){
   sensorPinNum=_sensorPinNum;
   pinMode(sensorPinNum, INPUT);
 }
