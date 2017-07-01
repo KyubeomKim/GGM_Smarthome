@@ -2,8 +2,9 @@
 
 void setup()
 {
-	analogReference(INTERNAL);
+	//analogReference(INTERNAL);
 	Serial.begin(9600);
+  void initTemp(int A0);
 }
 
 void loop()

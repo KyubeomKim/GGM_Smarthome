@@ -1,15 +1,21 @@
 #include "temp.h"
 #include "Arduino.h"
 
-float temperature;
-int reading;
-int lm35Pin = A0;
+int sensorPinNum;
+
+void initTemp(int _sensorPinNum)
+{
+	sensorPinNum = _sensorPinNum;
+	pinMode(sensorPinNum, INPUT);
+}
 
 float getTemp()
 {
-	reading = analogRead(lm35Pin);
+	float temperature;
+	int reading;
+
+	reading = analogRead(sensorPinNum);
 	temperature = reading / 9.31;
 
  return temperature;
 }
-
