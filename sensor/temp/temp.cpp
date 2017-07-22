@@ -1,11 +1,10 @@
 #include "temp.h"
 #include "Arduino.h"
 
-int sensorPinNum;
 
 void initTemp(int _sensorPinNum)
 {
-	sensorPinNum = _sensorPinNum;
+	int sensorPinNum = _sensorPinNum;
 	pinMode(sensorPinNum, INPUT);
 }
 

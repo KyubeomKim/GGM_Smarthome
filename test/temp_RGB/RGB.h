@@ -1,3 +1,5 @@
 void sensorInit(int _sensorPinNum);
-void readTemp(int temp);
 
+void Red();
+void Green();
+void Blue();
