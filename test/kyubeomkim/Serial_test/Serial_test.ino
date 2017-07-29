@@ -26,6 +26,6 @@ void loop() {
     Serial.println(c);
     Serial.print("input value (write) : ");
     Serial.write(c);
-    taekyun.write(49);
+    taekyun.write(c);
   }
 }
