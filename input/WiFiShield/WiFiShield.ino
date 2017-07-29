@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-//  char inputString = Serial.read();
+  //char inputString = Serial.read();
   digitalWrite(11,LOW);
   digitalWrite(12,LOW);
   digitalWrite(13,LOW);
